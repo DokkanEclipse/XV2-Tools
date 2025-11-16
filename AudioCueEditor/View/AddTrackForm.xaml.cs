@@ -1,5 +1,5 @@
 ﻿using AudioCueEditor.Audio;
-using GalaSoft.MvvmLight.CommandWpf;
+// using GalaSoft.MvvmLight.CommandWpf;
 using MahApps.Metro.Controls;
 using Microsoft.Win32;
 using System;
@@ -24,6 +24,7 @@ using Xv2CoreLib.ACB;
 using AudioCueEditor.Data;
 using Xv2CoreLib.Resource;
 using Xv2CoreLib.AFS2;
+using RelayCommand = Xv2CoreLib.Resource.UndoRedo.RelayCommand;
 
 namespace AudioCueEditor.View
 {

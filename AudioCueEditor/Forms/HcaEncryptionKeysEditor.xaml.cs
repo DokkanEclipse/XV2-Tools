@@ -13,7 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AudioCueEditor.Data;
-using GalaSoft.MvvmLight.CommandWpf;
+// using GalaSoft.MvvmLight.CommandWpf;
+using RelayCommand = Xv2CoreLib.Resource.UndoRedo.RelayCommand;
 
 namespace AudioCueEditor.Forms
 {

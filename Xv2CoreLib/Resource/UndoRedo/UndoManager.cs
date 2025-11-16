@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 
 #if !SaveEditor
-using GalaSoft.MvvmLight.CommandWpf;
 #endif
 
 

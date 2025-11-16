@@ -372,6 +372,7 @@
     <Compile Include="Resource\UndoRedo\UndoableProperty.cs" />
     <Compile Include="Resource\UndoRedo\UndoableStateChange.cs" />
     <Compile Include="Resource\UndoRedo\UndoManager.cs" />
+    <Compile Include="Resource\UndoRedo\RelayCommand.cs" />
     <Compile Include="Resource\Image\WriteableBitmapExtensions.cs" />
     <Compile Include="Resource\Xv2FileIO.cs" />
     <Compile Include="Resource\ZipManager.cs" />

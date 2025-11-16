@@ -874,7 +874,7 @@ namespace Xv2CoreLib.ACB
         #endregion
 
 #if NvvmLight
-        public RelayCommand CopyTrackCommand => new RelayCommand(CopyTrack);
+        public Xv2CoreLib.Resource.UndoRedo.RelayCommand CopyTrackCommand => new Xv2CoreLib.Resource.UndoRedo.RelayCommand(CopyTrack);
         private void CopyTrack()
         {
             if(SelectedTrack != null)
@@ -886,7 +886,7 @@ namespace Xv2CoreLib.ACB
             }
         }
 
-        public RelayCommand PasteTrackCommand => new RelayCommand(PasteTrack, CanPasteTrackOrAction);
+        public Xv2CoreLib.Resource.UndoRedo.RelayCommand PasteTrackCommand => new Xv2CoreLib.Resource.UndoRedo.RelayCommand(PasteTrack, CanPasteTrackOrAction);
         private void PasteTrack()
         {
             if (Clipboard.ContainsData(ACB_File.CLIPBOARD_ACB_TRACK))
@@ -895,7 +895,7 @@ namespace Xv2CoreLib.ACB
                 WrapperRoot.UndoablePasteAction(this);
         }
 
-        public RelayCommand DeleteTrackCommand => new RelayCommand(DeleteTrack);
+        public Xv2CoreLib.Resource.UndoRedo.RelayCommand DeleteTrackCommand => new Xv2CoreLib.Resource.UndoRedo.RelayCommand(DeleteTrack);
         private void DeleteTrack()
         {
             if (SelectedTrack != null)

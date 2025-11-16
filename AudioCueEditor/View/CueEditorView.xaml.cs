@@ -13,10 +13,11 @@ using Xv2CoreLib.AFS2;
 using VGAudio.Cli;
 using System.IO;
 using Microsoft.Win32;
-using GalaSoft.MvvmLight.CommandWpf;
+// using GalaSoft.MvvmLight.CommandWpf;
 using MahApps.Metro.Controls.Dialogs;
 using Xv2CoreLib.Resource.UndoRedo;
 using AudioCueEditor.Data;
+using RelayCommand = Xv2CoreLib.Resource.UndoRedo.RelayCommand;
 
 namespace AudioCueEditor.View
 {
