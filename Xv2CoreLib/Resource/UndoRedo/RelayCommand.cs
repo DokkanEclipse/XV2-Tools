@@ -19,9 +19,13 @@ namespace Xv2CoreLib.Resource.UndoRedo
 
 		public void Execute(object parameter) => execute();
 
-		public event EventHandler CanExecuteChanged;
+		public event EventHandler CanExecuteChanged
+		{
+			add { CommandManager.RequerySuggested += value; }
+			remove { CommandManager.RequerySuggested -= value; }
+		}
 
-		public void RaiseCanExecuteChanged() => CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+		public void RaiseCanExecuteChanged() => CommandManager.InvalidateRequerySuggested();
 	}
 	#endif
 }
